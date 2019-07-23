@@ -1,0 +1,23 @@
+{
+  "name": "turing-ui-ux",
+  "version": "1.0.0",
+  "description": "- [https://rajeman.github.io/turing-ui-ux](https://rajeman.github.io/turing-ui-ux)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajeman/turing-ui-ux.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajeman/turing-ui-ux/issues"
+  },
+  "homepage": "https://github.com/rajeman/turing-ui-ux#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

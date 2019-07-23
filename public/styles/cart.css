@@ -1,0 +1,174 @@
+body {
+  background: #f7f7f7;
+}
+
+.cart-modal {
+  background: #fff;
+}
+
+th {
+  color: #a6a6a6;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.table-shirt-img {
+  border: 1px dotted #e1e1e1;
+}
+
+.shirt-name {
+  color: #767676;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.shirt-type,
+.remove-text {
+  color: #a6a6a6;
+  font-size: 15px;
+}
+
+.remove-text {
+  font-size: 11px;
+}
+
+td {
+  height: 1px;
+}
+
+.item-price {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.cart-actions {
+  background: #efefef;
+}
+
+.button-back {
+  background: #fff;
+  color: #f85078;
+  width: 150px;
+  font-weight: bold;
+  height: 40px;
+  font-size: 13px;
+}
+
+.button-checkout {
+  background: #f85078;
+  color: #fff;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th {
+  border-top: none;
+}
+
+.table > thead > tr > th {
+  border-top: none;
+}
+
+.modal {
+  display: block;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-content {
+  margin-top: 53px;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-head-text {
+  font-size: 18px;
+}
+
+.nav-options {
+  color: rgb(31, 29, 29);
+}
+
+/* .img-shoe-3 {
+  height: 300px;
+} */
+
+.image-cover-container {
+  height: 200px;
+  background-image: url('../img/images-shoe3.png');
+  background-size: cover;
+}
+
+.discount-display {
+  height: 400px;
+  flex-grow: 1;
+}
+
+.discount-text-background {
+  background: #000;
+  flex: 1;
+}
+
+.discount-text {
+  font-size: 30px;
+  color: #fff;
+}
+
+.discount-exclusive {
+  background: #fff;
+}
+
+.shoe-display-right {
+  height: auto;
+  max-height: 400px;
+}
+
+/* .subscribe-text {
+  padding-left: 100px;
+  padding-right: 100px;
+} */
+
+.subscribe-text-background {
+  flex: 1;
+  background: #fff;
+}
+
+.more-item-actions {
+  height: 300px;
+}
+
+.subscribe-container {
+  background: #f7f7f7;
+}
+
+.subscribe {
+  background: #fff;
+}
+
+.navbar-search {
+  border: 1px dotted #e1e1e1;
+  height: 37px;
+}
+
+.navbar-search-input {
+  color: #000;
+}
+
+@media (max-width: 660px) {
+  .subscribe-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-search {
+    transform: scale(0.75);
+    width: 300px;
+  }
+  .btn-secondary {
+    transform: scale(0.75);
+  }
+}
