@@ -1,0 +1,180 @@
+.content-wrapper {
+  background-color: #e2e2e2;
+  width: 100%;
+}
+
+.navbar-1 {
+  background: #efefef;
+}
+
+.navbar-2 {
+  background: #ffffff;
+}
+
+.fa-bars {
+  color: #f62f5e;
+  font-size: 25px;
+}
+
+.shirt-details {
+  background: #ffffff;
+}
+
+.shirt-attributes {
+  border: 1px dotted #e1e1e1;
+  border-top: none;
+  border-radius: 3px;
+}
+
+.shirt-details-nav {
+  color: #a6a6a6;
+  font-size: 13px;
+}
+
+.size-guide-text {
+  color: #f73865;
+  font-size: 12px;
+}
+
+.size-filter {
+  display: inline-block;
+}
+
+.quantity-picker-circle {
+  background: #dbdbdb;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+}
+
+.quantity-picker-oval {
+  background: #fff;
+  width: 35px;
+  height: 25px;
+  border-radius: 15px;
+  border: 1px solid #dbdbdb;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.btn-cart {
+  width: 140px;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.shirt-detail-image {
+  height: 270px;
+  width: auto;
+}
+
+.small-shirt-images {
+  margin-top: 58px;
+}
+
+.shirt-detail-image-small-1 {
+  border: 1px solid #f62f5e;
+}
+
+.shirt-detail-image-small {
+  max-height: 60px;
+  width: auto;
+}
+
+.shirt-reviews {
+  background: #f7f7f7;
+}
+
+.review-text {
+  color: #a6a6a6;
+  font-size: 14px;
+}
+
+.shirt-reviews .shirt-rating {
+  height: 35px;
+}
+
+.review-time {
+  color: #a6a6a6;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.circular-background-small {
+  border-radius: 30px;
+  padding: 8px;
+  height: 33px;
+  width: auto;
+  background: #efefef;
+}
+
+.reaction-count {
+  color: #b8b8b8;
+}
+
+.reviewer-nick-name {
+  font-size: 15px;
+  color: #3f3f3f;
+}
+
+.reviewer-text-area,
+.review-text-area {
+  border: 1px dotted #e1e1e1;
+  border-radius: 3px;
+  width: 200px;
+  height: 50px;
+  background: #fafafa;
+}
+
+.review-text-area {
+  width: 80%;
+  height: 100px;
+}
+
+.review-instruction {
+  font-size: 10px;
+}
+.review-guide {
+  color: #f85078;
+}
+
+.right-review .btn-cart {
+  width: 100px;
+}
+
+.suggested-shirts {
+  background: #f7f7f7;
+  border: 1px dotted #e1e1e1;
+  border-radius: 3px;
+}
+
+.footer {
+  background: #ffffff;
+}
+
+.footer-option {
+  color: #000;
+  font-size: 25px;
+}
+
+@media (max-width: 992px) {
+  .left-review h4,
+  .left-review .shirt-rating,
+  .left-review .reviewer-name {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .shirt-reviews {
+    padding-left: 1rem !important;
+  }
+}
+
+@media (min-width: 570px) and (max-width: 780px) {
+  .card {
+    height: 350px;
+  }
+}

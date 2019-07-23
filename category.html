@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+
+  <body>
+    <div class="navbar text-center py-2 navbar-1">
+      <span>
+        <span class="color-black-bold">Hi!</span>
+        <span class="color-secondary">Sign in</span>
+        <span class="color-black-bold"
+          >or<span class="color-secondary">Register</span></span
+        >
+      </span>
+      <span>
+        <span class="px-2 color-black-bold">Daily Deals</span>
+        <span class="px-2 color-black-bold"> Sell</span>
+        <span class="px-2 color-black-bold">Help & Contact</span>
+      </span>
+      <span>
+        <img src="./icon/gbr.png" class="d-inline-block mr-2" alt="icons-bag" />
+        <span class="color-black-bold">£ GBP</span>
+      </span>
+
+      <span>
+        <span>
+          <img
+            src="./icon/icons-bag.png"
+            class="d-inline-block align-top"
+            alt="icons-bag"
+          />
+          <span class="badge-red px-2">6</span>
+        </span>
+
+        <span class="color-black-bold">Your bag: £3.99</span>
+      </span>
+    </div>
+
+    <div class="navbar text-center py-3 navbar-2 background-black">
+      <span class="color-secondary shop-brand"
+        ><h5 class="mb-0">SHOPMATE</h5></span
+      >
+      <span>
+        <span class="text-white px-2">Women</span>
+        <span class="text-white px-2">Men</span>
+        <span class="text-white px-2">Kids</span>
+        <span class="text-white px-2">Shoes</span>
+        <span class="text-white px-2">Brands</span>
+      </span>
+      <span class="navbar-search">
+        <img src="icon/icons-search-white.png" />
+        <input
+          class="navbar-search-input pb-1 ml-1"
+          type="text"
+          placeholder="search anything"
+        />
+        <img src="icon/icons-close-small-white.png" />
+      </span>
+      <span>
+        <img
+          src="./icon/icons-bag-white.png"
+          class="d-inline-block align-top"
+          alt="icons-bag"
+        />
+        <span class="badge-white px-2">6</span>
+      </span>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="mt-3 category-menu-container h-100 pl-1 pr-1">
+        <div class="category-menu py-4">
+          <div class="category-menu-text pl-5">
+            <h1 class="mt-4 category-menu-header">Mens wear</h1>
+            <div class="row mt-4 category-menu-items">
+              <div class="col-sm-4 d-flex flex-column">
+                <span class="category-menu-item">Accessories</span>
+                <span class="category-menu-item">ASOS Basic Tops</span>
+                <span class="category-menu-item">Bags</span>
+                <span class="category-menu-item">Caps & Hats</span>
+                <span class="category-menu-item">Gifts</span>
+                <span class="category-menu-item">Grooming</span>
+              </div>
+              <div class="col-sm-4 d-flex flex-column">
+                <span class="category-menu-item">Hoodies & Sweatshirts</span>
+                <span class="category-menu-item">Jackets & Coats</span>
+                <span class="category-menu-item">Jeans</span>
+                <span class="category-menu-item">Jewellery</span>
+                <span class="category-menu-item">Joggers</span>
+                <span class="category-menu-item">Jumpers & Cardigans</span>
+              </div>
+              <div class="col-sm-4 d-flex flex-column">
+                <span class="category-menu-item">Leather Jackets</span>
+                <span class="category-menu-item">Long Sleeve T-Shirts</span>
+                <span class="category-menu-item">Loungewear</span>
+                <span class="category-menu-item">Oversized & Longline</span>
+                <span class="category-menu-item">Polo Shirts</span>
+                <span class="category-menu-item">Shirts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="category-content row mt-4 pl-1">
+          <div class="col-sm-3">
+            <div class="current-filter pt-3 pb-3">
+              <div class="filter-header font-weight-bold mb-3 ml-3">
+                Filter 486 items
+              </div>
+              <div class="current-filters">
+                <img src="icon/icons-close-small-black.png" /><span
+                  class="filter-text-fade-1"
+                  >Gender:
+                </span>
+                <span class="filter-text-fade-2"> Woman</span>
+              </div>
+              <div class="current-filters">
+                <img src="icon/icons-close-small-black.png" /><span
+                  class="filter-text-fade-1"
+                  >Category:
+                </span>
+                <span class="filter-text-fade-2"> Dresses</span>
+              </div>
+            </div>
+            <div class="attributes-filter pt-3 mt-1 pr-1 pb-3">
+              <div class="color-filter ml-3">
+                <div class="filter-text-fade-1 font-weight-bold">Color</div>
+                <div class="color-selector d-flex flex-wrap">
+                  <div class="color-item">
+                    <div class="outer-circle-selected"></div>
+                    <div class="inner-circle"></div>
+                  </div>
+                  <div class="color-item">
+                    <div class="outer-circle"></div>
+                    <div class="inner-circle inner-circle-green"></div>
+                  </div>
+                  <div class="color-item">
+                    <div class="outer-circle"></div>
+                    <div class="inner-circle inner-circle-red"></div>
+                  </div>
+                  <div class="color-item">
+                    <div class="outer-circle"></div>
+                    <div class="inner-circle inner-circle-orange"></div>
+                  </div>
+                  <div class="color-item">
+                    <div class="outer-circle"></div>
+                    <div class="inner-circle inner-circle-yellow"></div>
+                  </div>
+                  <div class="color-item">
+                    <div class="outer-circle"></div>
+                    <div class="inner-circle inner-circle-teal"></div>
+                  </div>
+                  <div class="color-item">
+                    <div class="outer-circle"></div>
+                    <div class="inner-circle inner-circle-purple"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="size-filter mt-2 ml-3">
+                <div class="filter-text-fade-1 font-weight-bold">Size</div>
+                <div class="size-selector d-flex mt-3 flex-wrap">
+                  <div class="size-item text-center mr-2 mb-2">
+                    XS
+                  </div>
+                  <div
+                    class="size-item size-item-selected text-center mr-2 mb-2"
+                  >
+                    S
+                  </div>
+                  <div class="size-item text-center mr-2 mb-2">
+                    M
+                  </div>
+                  <div class="size-item text-center mr-2 mb-2">
+                    L
+                  </div>
+                  <div class="size-item text-center mr-2 mb-2">
+                    XL
+                  </div>
+                </div>
+              </div>
+              <div class="price-filter mt-2 ml-3">
+                <div class="filter-text-fade-1 font-weight-bold">
+                  Price range
+                </div>
+                <div class="slider-1">
+                  <input
+                    type="range"
+                    name="price-min"
+                    id="price-min"
+                    value="200"
+                    min="0"
+                    max="1000"
+                  />
+                </div>
+                <div class="prices d-flex justify-content-between pr-2">
+                  <span class="filter-text-fade-1">£4</span>
+                  <span class="filter-text-fade-1">£28</span>
+                </div>
+              </div>
+              <div class="brand-filter mt-3 ml-3">
+                <div class="filter-text-fade-1 font-weight-bold mb-3">
+                  Brand
+                </div>
+                <input type="checkbox" checked /><span
+                  class="ml-2 filter-text-fade-1"
+                  >Abercrombie &</span
+                >
+                <br />
+                <input type="checkbox" /><span class="ml-2 filter-text-fade-1"
+                  >Fitch</span
+                >
+                <br />
+                <input type="checkbox" checked /><span
+                  class="ml-2 filter-text-fade-1"
+                  >Adidas Originals</span
+                >
+                <br />
+                <input type="checkbox" checked /><span
+                  class="ml-2 filter-text-fade-1"
+                  >ASOS</span
+                >
+                <br />
+                <input type="checkbox" /><span class="ml-2 filter-text-fade-1"
+                  >Cheap Monday</span
+                >
+                <br />
+              </div>
+            </div>
+            <div class="apply-filter pb-3 py-2">
+              <div class="px-3 py-1">
+                <button type="submit" class="h-100 btn btn-secondary">
+                  Apply
+                </button>
+                <img src="icon/icons-close-small-red.png" class="ml-1" />
+                <span class="color-secondary clear-filter">Clear All</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <div class="row">
+              <div class="col-sm-4 px-2 shirt-item-1">
+                <div class="card-container">
+                  <div class="card card-under">
+                    <img
+                      class="card-img-top"
+                      src="./img/images-shirt5.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title py-2">Men's Knightwear Offers</h5>
+                      <button type="submit" class="btn btn-secondary my-2">
+                        Buy now
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card card-hover-overlay">
+                    <img
+                      class="card-img-top"
+                      src="./icon/icons-heart-red.png"
+                      alt="Card image cap"
+                    />
+
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title py-2">Ment's Knightwear Offers</h5>
+                      <button type="submit" class="btn btn-secondary my-2">
+                        Quick View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 px-2 shirt-item-1">
+                <div class="card-container">
+                  <div class="card card-under">
+                    <img
+                      class="card-img-top"
+                      src="./img/images-shirt5.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title py-2">Men's Knightwear Offers</h5>
+                      <button type="submit" class="btn btn-secondary my-2">
+                        Buy now
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card card-hover-overlay">
+                    <img
+                      class="card-img-top"
+                      src="./icon/icons-heart-red.png"
+                      alt="Card image cap"
+                    />
+
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title py-2">Ment's Knightwear Offers</h5>
+                      <button type="submit" class="btn btn-secondary my-2">
+                        Quick View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 pl-2 shirt-item-1">
+                <div class="card-container">
+                  <div class="card card-under">
+                    <h5 class="card-title py-2 text-center mt-4">
+                      Men's Shirt Offers
+                    </h5>
+                    <img
+                      class="card-img-top card-img-second"
+                      src="./img/images-shirt7.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5
+                        class="card-subtitle text-center mt-2 card-text-2 font-weight-bold"
+                      >
+                        From £4.99
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="card card-hover-overlay">
+                    <img
+                      class="card-img-top"
+                      src="./icon/icons-heart-red.png"
+                      alt="Card image cap"
+                    />
+
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title py-2">Ment's Knightwear Offers</h5>
+                      <button type="submit" class="btn btn-secondary my-2">
+                        Quick View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- second row -->
+              <div class="col-sm-4 px-2 shirt-item-1">
+                <div class="card-container">
+                  <div class="card card-under">
+                    <div class="sticker-hot">HOT</div>
+                    <img
+                      class="card-img-top"
+                      src="./img/images-shirt8.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title py-2 text-center">
+                        New Look T-Shirt In Gradient Fade
+                      </h5>
+                      <h5
+                        class="card-subtitle text-center mt-2 card-text-2 font-weight-bold"
+                      >
+                        £14.99
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="card card-hover-overlay">
+                    <img
+                      class="card-img-top"
+                      src="./icon/icons-heart-red.png"
+                      alt="Card image cap"
+                    />
+
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title py-2">Ment's Knightwear Offers</h5>
+                      <button type="submit" class="btn btn-secondary my-2">
+                        Quick View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 px-2 shirt-item-1">
+                <div class="card-container">
+                  <div class="card card-under">
+                    <img
+                      class="card-img-top"
+                      src="./img/images-shirt9.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title py-2">Novelty T-shirts</h5>
+                      <button type="submit" class="btn btn-secondary my-2">
+                        Buy now
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card card-hover-overlay">
+                    <img
+                      class="card-img-top"
+                      src="./icon/icons-heart-red.png"
+                      alt="Card image cap"
+                    />
+
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title py-2">Ment's Knightwear Offers</h5>
+                      <button type="submit" class="btn btn-secondary my-2">
+                        Quick View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 pl-2 shirt-item-1">
+                <div class="card-container">
+                  <div class="card card-under">
+                    <img
+                      class="card-img-top"
+                      src="./img/images-shirt10.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-body d-flex flex-column align-items-center"
+                    >
+                      <h5 class="card-title py-2">Various T-shorts</h5>
+                      <h5 class="card-subtitle text-center">£14.99</h5>
+                      <div class="color-selector d-flex flex-wrap">
+                        <div class="color-item">
+                          <div class="outer-circle-selected"></div>
+                          <div class="inner-circle"></div>
+                        </div>
+                        <div class="color-item">
+                          <div class="outer-circle"></div>
+                          <div class="inner-circle inner-circle-green"></div>
+                        </div>
+                        <div class="color-item">
+                          <div class="outer-circle"></div>
+                          <div class="inner-circle inner-circle-red"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card card-hover-overlay">
+                    <img
+                      class="card-img-top"
+                      src="./icon/icons-heart-red.png"
+                      alt="Card image cap"
+                    />
+
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title py-2">Ment's Knightwear Offers</h5>
+                      <button type="submit" class="btn btn-secondary my-2">
+                        Quick View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="suggested-shirts ">
+          <div class="row mt-2 ">
+            <div class="col-sm-3 shirt-item-1">
+              <div class="card-container">
+                <div class="card card-under">
+                  <div class="sticker-hot">HOT</div>
+                  <img
+                    class="card-img-top"
+                    src="./img/images-shirt13.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title py-2 text-center">
+                      New Look T-Shirt In Gradient Fade
+                    </h5>
+                    <h5
+                      class="card-subtitle text-center mt-2 card-text-2 font-weight-bold"
+                    >
+                      £14.99
+                    </h5>
+                  </div>
+                </div>
+                <div class="card card-hover-overlay">
+                  <img
+                    class="card-img-top"
+                    src="./icon/icons-heart-red.png"
+                    alt="Card image cap"
+                  />
+
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title py-2">Ment's Knightwear Offers</h5>
+                    <button type="submit" class="btn btn-secondary my-2">
+                      Quick View
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3 shirt-item-1">
+              <div class="card-container">
+                <div class="card card-under">
+                  <img
+                    class="card-img-top"
+                    src="./img/images-shirt10.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <h5 class="card-title py-2">Various T-shorts</h5>
+                    <h5 class="card-subtitle text-center">£14.99</h5>
+                    <div class="color-selector d-flex flex-wrap">
+                      <div class="color-item">
+                        <div class="outer-circle-selected"></div>
+                        <div class="inner-circle"></div>
+                      </div>
+                      <div class="color-item">
+                        <div class="outer-circle"></div>
+                        <div class="inner-circle inner-circle-green"></div>
+                      </div>
+                      <div class="color-item">
+                        <div class="outer-circle"></div>
+                        <div class="inner-circle inner-circle-red"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-hover-overlay">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title-overlay text-center mt-3">
+                      Harajuku T-shirt
+                    </h5>
+                    <h5 class="card-subtitle-overlay text-center mt-2">
+                      £14.99
+                    </h5>
+                    <div
+                      class="color-selector d-flex flex-wrap justify-content-center mt-5"
+                    >
+                      <div class="color-item">
+                        <div class="outer-circle-selected"></div>
+                        <div class="inner-circle"></div>
+                      </div>
+                      <div class="color-item">
+                        <div class="outer-circle"></div>
+                        <div class="inner-circle inner-circle-green"></div>
+                      </div>
+                      <div class="color-item">
+                        <div class="outer-circle"></div>
+                        <div class="inner-circle inner-circle-red"></div>
+                      </div>
+                    </div>
+                    <div class="shirt-options d-flex justify-content-center">
+                      <div class="size-select-wrapper">
+                        <select class="size-select">
+                          <option value="volvo">Size</option>
+                          <option value="volvo">Color</option>
+                        </select>
+                      </div>
+                      <div>
+                        <button
+                          type="submit"
+                          class="overlay-button btn btn-secondary"
+                        >
+                          Buy now
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center w-100 save-options mt-4 justify-content-center"
+                    >
+                      <div>
+                        <img
+                          class="overlay-img-2 px-2"
+                          src="./icon/icons-heart-red.png"
+                          alt="Card image cap"
+                        />
+                      </div>
+
+                      <div class="add-to-wish px-2">Add to Wish List</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3 shirt-item-1">
+              <div class="card-container">
+                <div class="card card-under">
+                  <img
+                    class="card-img-top"
+                    src="./img/images-shirt11.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <h5 class="card-title py-2">Men Casual Lizard</h5>
+                    <h5 class="card-subtitle text-center">£14.99</h5>
+                    <div class="color-selector d-flex flex-wrap">
+                      <div class="color-item">
+                        <div class="outer-circle-selected"></div>
+                        <div class="inner-circle"></div>
+                      </div>
+                      <div class="color-item">
+                        <div class="outer-circle"></div>
+                        <div class="inner-circle inner-circle-green"></div>
+                      </div>
+                      <div class="color-item">
+                        <div class="outer-circle"></div>
+                        <div class="inner-circle inner-circle-red"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-hover-overlay">
+                  <img
+                    class="card-img-top"
+                    src="./icon/icons-heart-red.png"
+                    alt="Card image cap"
+                  />
+
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title py-2">Ment's Knightwear Offers</h5>
+                    <button type="submit" class="btn btn-secondary my-2">
+                      Quick View
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3 shirt-item-1">
+              <div class="card-container">
+                <div class="card card-under">
+                  <img
+                    class="card-img-top"
+                    src="./img/images-shirt11.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <h5 class="card-title py-2">Men Casual Lizard</h5>
+                    <h5 class="card-subtitle text-center">£14.99</h5>
+                    <div class="color-selector d-flex flex-wrap">
+                      <div class="color-item">
+                        <div class="outer-circle-selected"></div>
+                        <div class="inner-circle"></div>
+                      </div>
+                      <div class="color-item">
+                        <div class="outer-circle"></div>
+                        <div class="inner-circle inner-circle-green"></div>
+                      </div>
+                      <div class="color-item">
+                        <div class="outer-circle"></div>
+                        <div class="inner-circle inner-circle-red"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-hover-overlay">
+                  <img
+                    class="card-img-top"
+                    src="./icon/icons-heart-red.png"
+                    alt="Card image cap"
+                  />
+
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title py-2">Ment's Knightwear Offers</h5>
+                    <button type="submit" class="btn btn-secondary my-2">
+                      Quick View
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-2 category-menu-container h-100">
+        <div class="shoe-others py-4">
+          <div class="category-menu-text pl-5">
+            <h1 class="category-menu-header text-white converse">Converse</h1>
+
+            <div class="category-menu-item">
+              Explore Styles tough enough to hand all your workouts
+            </div>
+            <button type="submit" class="btn btn-secondary mt-5">
+              Shop Brand
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="navbar subscribe d-flex flex-wrap justify-content-between align-items-center mt-3"
+      >
+        <div class="subscribe-text font-weight-bold">
+          SUBSCRIBE FOR SHOP NEWS, UPDATES AND SPECIAL OFFERS
+        </div>
+        <span class="navbar-search">
+          <img src="icon/icons-email-black.png" class="ml-2" />
+          <input
+            class="navbar-search-input pb-1 ml-1"
+            type="text"
+            placeholder="Your e-mail here"
+          />
+          <img src="icon/icons-close-small-white.png" />
+        </span>
+        <button type="submit" class="btn btn-secondary my-2">
+          Subscribe
+        </button>
+      </div>
+      <div
+        class="navbar footer px-5 py-4 d-flex flex-column align-items-center"
+      >
+        <div class="options d-flex justify-content-center flex-wrap">
+          <span class="footer-option mx-4">Women</span>
+          <span class="footer-option mx-4">Men</span>
+          <span class="footer-option mx-4">Kids</span>
+          <span class="footer-option mx-4">Shoes</span>
+          <span class="footer-option mx-4">Brands</span>
+        </div>
+        <div class="social pt-4">
+          <img src="icon/icons-instagram-black.png" class="social-icons" />
+          <img src="icon/icons-pinterest-black.png" class="social-icons" />
+          <img src="icon/icons-twitter-black.png" class="social-icons" />
+          <img src="icon/icons-facebook-black.png" class="social-icons" />
+        </div>
+        <div class="copyright mt-3">
+          &copy;2016 Shopmate Ltd &bull; Contact &bull; Privacy policy
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

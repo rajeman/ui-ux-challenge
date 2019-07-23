@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+      integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/item.css" />
+    <link rel="stylesheet" href="./styles/cart.css" />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="navbar text-center py-3 navbar-2 background-black">
+      <span class="color-secondary shop-brand"
+        ><h5 class="mb-0">SHOPMATE</h5></span
+      >
+      <span class="d-flex mr-5 pr-5 nav-options">
+        <span class="px-4">Women</span>
+        <span class="px-4">Men</span>
+        <span class="px-4">Kids</span>
+        <span class="px-4">Shoes</span>
+        <span class="px-4">Brands</span>
+      </span>
+      <span>
+        <img src="./icon/icons-search-black.png" class="mr-3" />
+        <span id="cart-badge">
+          <img
+            src="./icon/icons-bag.png"
+            class="d-inline-block align-top"
+            alt="icons-bag"
+          />
+          <span class="badge-red px-2">6</span>
+        </span>
+      </span>
+    </div>
+    <div class="container">
+      <div class="d-flex flex-column align-items-center">
+        <div class="text-center w-100 image-cover-container"></div>
+
+        <div
+          class="d-flex my-3 w-100 subscribe-container justify-content-center"
+        >
+          <div class="discount-display d-flex flex-column pr-3 ">
+            <div class="discount-text-background pl-5">
+              <div class="discount-text pt-5">
+                We have some exclusive discounts
+              </div>
+            </div>
+            <div
+              class="subscribe-text-background d-flex flex-column align-items-center justify-content-center"
+            >
+              <div class="subscribe-text text-center px-5">
+                SIGN UP FOR EXCLUSIVE SALES AND PRODUCT NEWS
+              </div>
+              <div
+                class="navbar subscribe d-flex flex-wrap justify-content-center align-items-center mt-3"
+              >
+                <span class="navbar-search mr-2">
+                  <img src="icon/icons-email-black.png" class="ml-2" />
+                  <input
+                    class="navbar-search-input pb-1 ml-1"
+                    type="text"
+                    placeholder="Your e-mail here"
+                  />
+                  <img src="icon/icons-close-small-white.png" />
+                </span>
+                <button type="submit" class="btn btn-secondary my-2 ml-2">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="shoe-display-right text-center">
+            <img src="./img/images-shoe5.png" class="shoe-display-right" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="navbar footer px-5 py-4 d-flex flex-column align-items-center pt-5"
+      >
+        <div class="options d-flex justify-content-center flex-wrap">
+          <span class="footer-option mx-4">Women</span>
+          <span class="footer-option mx-4">Men</span>
+          <span class="footer-option mx-4">Kids</span>
+          <span class="footer-option mx-4">Shoes</span>
+          <span class="footer-option mx-4">Brands</span>
+        </div>
+        <div class="social pt-4">
+          <img src="icon/icons-instagram-black.png" class="social-icons" />
+          <img src="icon/icons-pinterest-black.png" class="social-icons" />
+          <img src="icon/icons-twitter-black.png" class="social-icons" />
+          <img src="icon/icons-facebook-black.png" class="social-icons" />
+        </div>
+        <div class="copyright mt-3">
+          &copy;2016 Shopmate Ltd &bull; Contact &bull; Privacy policy
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="modal show" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+                id="close-button"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="cart-modal">
+                <div class="modal-table px-4">
+                  <div class="modal-head-text pl-2">4 Items In Your Cart</div>
+                  <table class="table">
+                    <thead>
+                      <tr class="">
+                        <th>Item</th>
+                        <th>Size</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div
+                            class="table-shirt-item d-flex align-items-center"
+                          >
+                            <img
+                              src="./img/images-shirt1.png"
+                              class="table-shirt-img"
+                            />
+                            <div
+                              class="table-shirt-item-description d-flex flex-column ml-4"
+                            >
+                              <div class="shirt-name">
+                                Green T-shirt 2016
+                              </div>
+                              <div class="shirt-type mt-2">Men Bk3569</div>
+                              <div class="shirt-remove d-flex mt-2">
+                                <img
+                                  src="icon/icons-close-small-red.png"
+                                  class="ml-n1"
+                                />
+                                <span class="remove-text">Remove</span>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="d-flex flex-column shirt-type justify-content-center h-100 pb-2"
+                          >
+                            <span class="">XXL</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-start h-100 pb-2"
+                          >
+                            <div class="item-quantity-picker">
+                              <div class="quantity-picker d-flex">
+                                <div
+                                  class="quantity-picker-circle text-center mr-1"
+                                >
+                                  -
+                                </div>
+                                <div
+                                  class="quantity-picker-oval text-center font-weight-bold"
+                                >
+                                  2
+                                </div>
+                                <div
+                                  class="quantity-picker-circle text-center ml-1"
+                                >
+                                  +
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-start h-100 pb-2 item-price"
+                          >
+                            £21
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div
+                            class="table-shirt-item d-flex align-items-center"
+                          >
+                            <img
+                              src="./img/images-shirt2.png"
+                              class="table-shirt-img"
+                            />
+                            <div
+                              class="table-shirt-item-description d-flex flex-column ml-4"
+                            >
+                              <div class="shirt-name">
+                                Purple T-shirt 2016
+                              </div>
+                              <div class="shirt-type mt-2">Men Bk3569</div>
+                              <div class="shirt-remove d-flex mt-2">
+                                <img
+                                  src="icon/icons-close-small-red.png"
+                                  class="ml-n1"
+                                />
+                                <span class="remove-text">Remove</span>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="d-flex flex-column shirt-type justify-content-center h-100 pb-2"
+                          >
+                            <span class="">XXL</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-start h-100 pb-2"
+                          >
+                            <div class="item-quantity-picker">
+                              <div class="quantity-picker d-flex">
+                                <div
+                                  class="quantity-picker-circle text-center mr-1"
+                                >
+                                  -
+                                </div>
+                                <div
+                                  class="quantity-picker-oval text-center font-weight-bold"
+                                >
+                                  2
+                                </div>
+                                <div
+                                  class="quantity-picker-circle text-center ml-1"
+                                >
+                                  +
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-start h-100 pb-2 item-price"
+                          >
+                            £13
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div
+                            class="table-shirt-item d-flex align-items-center"
+                          >
+                            <img
+                              src="./img/images-shirt3.png"
+                              class="table-shirt-img"
+                            />
+                            <div
+                              class="table-shirt-item-description d-flex flex-column ml-4"
+                            >
+                              <div class="shirt-name">
+                                Yellow T-shirt 2016
+                              </div>
+                              <div class="shirt-type mt-2">Men Bk3569</div>
+                              <div class="shirt-remove d-flex mt-2">
+                                <img
+                                  src="icon/icons-close-small-red.png"
+                                  class="ml-n1"
+                                />
+                                <span class="remove-text">Remove</span>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="d-flex flex-column shirt-type justify-content-center h-100 pb-2"
+                          >
+                            <span class="">XXL</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-start h-100 pb-2"
+                          >
+                            <div class="item-quantity-picker">
+                              <div class="quantity-picker d-flex">
+                                <div
+                                  class="quantity-picker-circle text-center mr-1"
+                                >
+                                  -
+                                </div>
+                                <div
+                                  class="quantity-picker-oval text-center font-weight-bold"
+                                >
+                                  2
+                                </div>
+                                <div
+                                  class="quantity-picker-circle text-center ml-1"
+                                >
+                                  +
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-start h-100 pb-2 item-price"
+                          >
+                            £42
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div
+                            class="table-shirt-item d-flex align-items-center"
+                          >
+                            <img
+                              src="./img/images-shirt4.png"
+                              class="table-shirt-img"
+                            />
+                            <div
+                              class="table-shirt-item-description d-flex flex-column ml-4"
+                            >
+                              <div class="shirt-name">
+                                Red T-shirt 2016
+                              </div>
+                              <div class="shirt-type mt-2">Men Bk3569</div>
+                              <div class="shirt-remove d-flex mt-2">
+                                <img
+                                  src="icon/icons-close-small-red.png"
+                                  class="ml-n1"
+                                />
+                                <span class="remove-text">Remove</span>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="d-flex flex-column shirt-type justify-content-center h-100 pb-2"
+                          >
+                            <span class="">XS</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-start h-100 pb-2"
+                          >
+                            <div class="item-quantity-picker">
+                              <div class="quantity-picker d-flex">
+                                <div
+                                  class="quantity-picker-circle text-center mr-1"
+                                >
+                                  -
+                                </div>
+                                <div
+                                  class="quantity-picker-oval text-center font-weight-bold"
+                                >
+                                  2
+                                </div>
+                                <div
+                                  class="quantity-picker-circle text-center ml-1"
+                                >
+                                  +
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-start h-100 pb-2 item-price"
+                          >
+                            £24
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div
+                  class="cart-actions w-100 d-flex flex-sm-row flex-wrap justify-content-between align-items-center py-3 pl-2 pr-4"
+                >
+                  <div class="">
+                    <button type="submit" class="btn btn-secondary button-back">
+                      Back to Shop
+                    </button>
+                  </div>
+                  <div class="h-100">
+                    <button
+                      type="submit"
+                      class="btn btn-secondary button-back button-checkout"
+                    >
+                      Checkout
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    document
+      .getElementById('close-button')
+      .addEventListener('click', function() {
+        document.getElementById('myModal').style.display = 'none';
+      });
+    document.getElementById('cart-badge').addEventListener('click', function() {
+      document.getElementById('myModal').style.display = 'block';
+    });
+  </script>
+</html>
